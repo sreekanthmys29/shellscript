@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x -e
 marks=$1
 if [ $marks -ge 80 ]; then
     echo "Excellent"
