@@ -10,5 +10,5 @@ echo "----------forloop----------------------------"
 REGIONS=$1
 for REGION in {REGIONS};do
 aws ec2 describe-subnets | jq ".Subnets[].AvailabilityZone"
-echo "Region ======     $REGION" 
+echo "Region ======     $REGIONS" 
 done
