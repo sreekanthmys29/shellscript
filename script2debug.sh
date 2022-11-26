@@ -1,7 +1,8 @@
-start=$1
-end=$2
+START=$1
+END=$2
 set -x
-for i in ($start .. $end);do
+for i in {$START..$END};
+do
 echo "input values $i"
 done
 
