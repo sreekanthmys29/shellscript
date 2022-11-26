@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 #Example1
 A=10
 B=20
