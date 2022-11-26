@@ -1,6 +1,7 @@
-inpputvar=$@
+start=$1
+end=$2
 set -x
-for i in $(seq 1 $inpputvar);do
+for i in {$start .. $end};do
 echo "input values $i"
 done
 
