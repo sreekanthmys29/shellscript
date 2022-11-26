@@ -13,7 +13,7 @@ fi
 marks=$2
 if [ $marks -lt 100 ]; then
     echo "greater than 100"
-elif [ $marks -ge 200]; then
+elif [ $marks -ge 200 ]; then
     echo "greater than 200"
 else
     echo "else block"
