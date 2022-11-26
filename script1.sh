@@ -11,5 +11,6 @@ var2=$2
 var3=$3
 for REGION in {1..5};do
 aws ec2 describe-subnets | jq ".Subnets[].AvailabilityZone"
+echo "Number of Argument from console $#"
 echo "Region ======  $REGION    $var1    $var2    $var3" 
 done
