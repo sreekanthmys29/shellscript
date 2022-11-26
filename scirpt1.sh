@@ -3,12 +3,12 @@
 A=10
 B=20
 C=30
-echo ${A} {B} {C}
+echo ${A} ${B} ${C}
 echo "--------------------------------------"
 
 echo "----------forloop----------------------------"
 REGIONS=$1
-FOR REGION IN {REGIONS};do
+for REGION in {REGIONS};do
 aws ec2 describe-subnets | jq ".Subnets[].AvailabilityZone"
 echo "Region ======     $REGION" 
 done
