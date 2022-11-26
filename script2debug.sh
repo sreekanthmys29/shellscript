@@ -1,3 +1,4 @@
+set -x -e
 START=$1
 END=$2
 for i in $(seq $START $END); do
