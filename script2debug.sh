@@ -1,5 +1,8 @@
 inpputvar=$@
 set -x
-for i in $(1 $inpputvar);do
+for i in $(seq 1 $inpputvar);do
 echo "input values $i"
 done
+
+
+
