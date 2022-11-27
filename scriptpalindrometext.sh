@@ -10,7 +10,7 @@ for ((i = $length-1; i >= 0; i--)); do
     REVERSE="$REVERSE${INPUT:$i:1}"
 done
  echo $REVERSE
-if [ $INPUT = $REVERSE ]; then
+if [ "$INPUT" = "$REVERSE" ]; then
     echo "Input value  Palindrome"
 
 else
